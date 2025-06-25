@@ -284,7 +284,7 @@
 .instructorsBox {
   display: flex;
   justify-content: space-between;
-  /* gap: 32px; */
+  gap: 32px;
   margin-top: 64px;
   margin-bottom: 190px;
 }
