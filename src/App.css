@@ -1,38 +1,333 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  margin: 0 auto;
+  margin-top: 28px;
+  max-width: 1240px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/********** navbar css **********/
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo {
+  width: 132px;
+  height: 41px;
+}
+
+.navbarOptions {
+  margin-left: 15px;
+  display: flex;
+  gap: 48px;
+}
+
+.navbarOptions > a {
+  color: #404040cc;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -2%;
+}
+
+.navbarLogin {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.navbarLoginSearch {
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+
+.navbarLoginButtons {
+  display: flex;
+  column-gap: 8px;
+}
+
+.navbarLoginButton {
+  background: none;
+  border: 0;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 16px;
+  color: #09b451;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+.navbarRegisterButton {
+  border: 0;
+  background-color: #09b451;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.navbarLoginMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbarOptions,
+  .navbarLogin {
+    display: none;
+  }
+
+  .navbarLoginMobile {
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/********* home css ********/
+
+.executionContainer {
+  display: flex;
+  align-items: center;
+  /* gap: 100px; */
+  /* border: none; */
+  border-radius: 50px;
+  margin-top: 40px;
+  position: relative;
+  padding: 60px 40px 30px 60px;
+}
+
+.executionContainerLeft {
+  width: 50%;
+}
+
+.executionContainerLeft > h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 60px;
+  color: #000000;
+}
+
+.executionContainerLeft > button {
+  background-color: #09b451;
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 20px 41px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.execuionContainerRight {
+  width: 50%;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+}
+
+.execuionContainerRight > img {
+  border-radius: 30px;
+}
+
+.executionContainerBackground {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.cardLeft {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 350px;
+  background-color: white;
+  z-index: 10;
+  padding: 18px 24px 12px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cardLeft > p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardRight {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 62%;
+  left: 435px;
+  right: -20px;
+  background-color: white;
+  z-index: 10;
+  padding: 18px 24px 12px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardRight > h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: #09b451;
+}
+
+.cardRight > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+}
+
+.cardRight > img {
+  width: 30px;
+  height: 30px;
+}
+
+.greenText {
+  color: #09b451;
+}
+
+/******** features css********/
+
+.featuresContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.feature {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: #ddffff;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/***** courses css*****/
+
+.courseCategories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.courseCategories > p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #333333;
+}
+
+.courseCategories > a {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 24px;
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}
+
+.coursesText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-top: 64px;
+}
+
+/****** instructor css******/
+
+.instructorHeading {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+}
+
+.instructorsBox {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 32px; */
+  margin-top: 64px;
+  margin-bottom: 190px;
+}
+
+.instructorBox {
+  box-shadow: 0px 0px 20px 0px #cbcbcb40;
+  border-radius: 6px;
+  padding: 30px 45px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.instructorBox > img {
+  width: 113px;
+  height: 113px;
+  margin-bottom: 16px;
+}
+
+.instructorBox > h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.instructorBox > p:nth-child(3) {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #09b451;
+}
+
+.instructorBox > p:nth-child(4) {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #333333;
+  margin-top: 36px;
 }
