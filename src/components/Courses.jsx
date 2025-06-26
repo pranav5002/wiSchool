@@ -59,13 +59,13 @@ const Courses = () => {
     <div className="coursesContainer">
       <div className="courseCategories">
         <p>Choose favourite course from top cartegories</p>
-        <a href="#">See all</a>
+        <a href="www." alt="">See all</a>
       </div>
 
       <Slider {...settings}>
         {CoursesList.map((data) => (
           <div key={data.id} className="courseSlide">
-            <img src={data.img} />
+            <img src={data.img} alt=""/>
             <p>{data.title}</p>
           </div>
         ))}

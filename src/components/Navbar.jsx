@@ -9,11 +9,11 @@ const Navbar = () => {
       <img src={group177} className="navbarLogo" alt="logo" />
 
       <div className="navbarOptions">
-        <a href="#">Home</a>
-        <a href="#">Courses</a>
-        <a href="#">Instructors</a>
-        <a href="#">Schedules</a>
-        <a href="#">Contact Us</a>
+        <a href="www" alt="">Home </a>
+        <a href="www" alt="">Courses</a>
+        <a href="www" alt="">Instructors</a>
+        <a href="www" alt="">Schedules</a>
+        <a href="www" alt="">Contact Us</a>
       </div>
 
       <div className="navbarLogin">
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbarLoginMobile">
-        <img />
+        <img/>
       </div>
     </div>
   );

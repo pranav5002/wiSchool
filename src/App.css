@@ -272,6 +272,143 @@
   margin-top: 64px;
 }
 
+/***** popular courses css*****/
+
+.popularCourses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popularCourses > p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #333333;
+  margin-top: 100px;
+  margin-bottom: 64px;
+}
+
+.sortButton {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #09b451;
+  gap: 1.5px;
+  border-radius: 50px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.courseCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 2fr;
+  gap: 32px;
+  box-shadow: 0px 0px 20px 0px #cbcbcb40;
+  border-radius: 50px;
+}
+
+.courseCard {
+}
+
+/********education css*******/
+
+.educationHeading {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+}
+
+.educationBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  margin-bottom: 100px;
+  gap: 100px;
+}
+
+.educationLeft {
+  position: relative;
+}
+
+.educationCard {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 45%;
+  left: 310px;
+  right: -50px;
+  background-color: white;
+  z-index: 10;
+  padding: 16px 8px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.educationCard > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.educationCard > div > span:first-child {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #09b451;
+}
+
+.educationCard > div > img {
+  width: 38px;
+  /* height: 2px; */
+  margin-bottom: 4px;
+}
+
+.educationCard > div > span:last-child {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #333333;
+}
+
+.educationRight > h1 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  color: #333333;
+}
+
+.educationFeatures {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  gap: 24px;
+}
+
+.educationFeatures > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333333;
+}
 /****** instructor css******/
 
 .instructorHeading {

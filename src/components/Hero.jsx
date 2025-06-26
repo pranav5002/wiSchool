@@ -21,10 +21,10 @@ const Hero = () => {
             Learn from best <span className="greenText">instructors </span>
             around the globe
           </p>
-          <img src={boys} />
+          <img src={boys} alt=""/>
         </div>
         <div className="cardRight">
-          <img src={personIcon} />
+          <img src={personIcon} alt=""/>
           <h1>15k </h1>
           <p>Amazing students around the globe</p>
         </div>

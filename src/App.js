@@ -1,4 +1,5 @@
 import Courses from "./components/Courses";
+import Education from "./components/Education";
 import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Instructor from "./components/Instructor";
@@ -12,6 +13,7 @@ function App() {
       <Features/>
       <Courses/>
       <PopularCourses/>
+      <Education/>
       <Instructor/>
     </div>
   );

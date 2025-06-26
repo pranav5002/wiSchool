@@ -9,23 +9,23 @@ const Features = () => {
   return (
     <div className='featuresContainer'>
       <div className='feature'>
-        <img src={feature1}/>
+        <img src={feature1} alt=''/>
         <p>Problem Solving</p>
       </div>
       <div className='feature'>
-        <img src={feature2}/>
+        <img src={feature2} alt=''/>
         <p>Live Chat</p>
       </div>
       <div className='feature'>
-        <img src={feature3}/>
+        <img src={feature3} alt=''/>
         <p>Group Reading</p>
       </div>
       <div className='feature'>
-        <img src={feature4}/>
+        <img src={feature4}alt=''/>
         <p>10K Courses</p>
       </div>
       <div className='feature'>
-        <img src={feature5}/>
+        <img src={feature5} alt=''/>
         <p>Hand-on activities</p>
       </div>
     </div>
