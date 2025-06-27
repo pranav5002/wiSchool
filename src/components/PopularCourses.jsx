@@ -23,102 +23,114 @@ const PopularCourses = () => {
       <div className="courseCards">
         <div className="courseCard">
           <img src={course1} alt="" />
-          <div>
-            <h4>Learn Marketing from Top Instructors.</h4>
-            <div>
+          <div className="courseHeading">
+            <p>Learn Marketing from Top Instructors.</p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>
 
         <div className="courseCard">
           <img src={course2} alt="" />
-          <div>
-            <h4>Front-end development is not hard as you think</h4>
-            <div>
+          <div className="courseHeading">
+            <p>Front-end development is not hard as you think</p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>
 
         <div className="courseCard">
           <img src={course3} alt="" />
-          <div>
-            <h4>Everrything you need to know in UX</h4>
-            <div>
+          <div className="courseHeading">
+            <p>Everrything you need to know in UX</p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>
 
         <div className="courseCard">
           <img src={course4} alt="" />
-          <div>
-            <h4>Learn photography with ease</h4>
-            <div>
+          <div className="courseHeading">
+            <p>Learn photography with ease</p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>
 
         <div className="courseCard">
           <img src={course5} alt="" />
-          <div>
-            <h4>Be a pro in data analysis</h4>
-            <div>
+          <div className="courseHeading">
+            <p>Be a pro in data analysis</p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>
 
         <div className="courseCard">
           <img src={course6} alt="" />
-          <div>
-            <h4>Ethical Harking is not hard as you think </h4>
-            <div>
+          <div className="courseHeading">
+            <p>Ethical Harking is not hard as you think </p>
+            <div className="courseRating">
               <img src={star} alt="star" />
               <p>4.5</p>
             </div>
           </div>
-          <div>
+          <div className="courseDetails">
             <p>6 weeks</p>
-            <img src={follower} alt="" />
-            <p>1.5k Students</p>
+            <div className="courseFollowers">
+              <img src={follower} alt="" />
+              <p>1.5k Students</p>
+            </div>
             <p>30.5$</p>
           </div>
         </div>

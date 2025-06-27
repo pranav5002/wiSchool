@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -274,9 +275,14 @@
 
 /***** popular courses css*****/
 
+.popularCoursesContainer {
+  margin-bottom: 100px;
+}
+
 .popularCourses {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 36px;
 }
 
 .popularCourses > p {
@@ -285,7 +291,6 @@
   font-size: 32px;
   color: #333333;
   margin-top: 100px;
-  margin-bottom: 64px;
 }
 
 .sortButton {
@@ -300,7 +305,6 @@
   padding-bottom: 8px;
   padding-left: 16px;
   margin-top: 100px;
-  margin-bottom: 100px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -312,10 +316,145 @@
   grid-template-rows: 2fr;
   gap: 32px;
   box-shadow: 0px 0px 20px 0px #cbcbcb40;
-  border-radius: 50px;
+  margin-top: 0px;
 }
 
-.courseCard {
+.courseCard > img {
+  border-radius: 10px;
+}
+
+.courseHeading {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+  text-transform: capitalize;
+  display: flex;
+  margin: 24px;
+}
+
+.courseRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.courseRating > p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.courseDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courseDetails > p:first-child {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+
+.courseDetails > p:last-child {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: #09b451;
+}
+
+.courseFollowers {
+  display: flex;
+  gap: 13px;
+}
+
+.courseFollowers > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+
+/******sills css******/
+
+.skillContainer > p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.skillCards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 2fr;
+  gap: 32px;
+  box-shadow: 0px 0px 20px 0px #cbcbcb40;
+  margin-top: 64px;
+  margin-bottom: 98px;
+}
+
+.skillCard > img {
+  border-radius: 10px;
+}
+
+.skillHeading {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+  text-transform: capitalize;
+  display: flex;
+  margin: 24px;
+}
+
+.skillRating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.skillRating > p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.skillDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillDetails > p:first-child {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+}
+
+.skillDetails > p:last-child {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 24px;
+  color: #09b451;
+}
+
+.skillFollowers {
+  display: flex;
+  gap: 13px;
+}
+
+.skillFollowers > p {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
 }
 
 /********education css*******/
@@ -375,7 +514,6 @@
 
 .educationCard > div > img {
   width: 38px;
-  /* height: 2px; */
   margin-bottom: 4px;
 }
 
@@ -409,6 +547,93 @@
   font-size: 20px;
   color: #333333;
 }
+
+/******reviews css******/
+
+.reviewsContainer {
+  margin-bottom: 100px;
+}
+.reviewsContainer > p {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 32px;
+  text-transform: capitalize;
+  color: #242243;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 54px;
+}
+
+.reviewHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.reviewHeading > h2 {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewHeading > h2 > span {
+  color: #09b451;
+}
+
+.reviewHeading > h2 > img {
+  width: 211px;
+  margin-bottom: 4px;
+}
+
+.reviewCards {
+  display: flex;
+  gap: 32px;
+}
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0px 0px 20px 0px #e2e2e240;
+  padding: 48px;
+}
+
+.reviewCard > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+}
+
+.reviewPerson {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.reviewDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.reviewDetails > p:first-child {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.reviewDetails > p:last-child {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 18px;
+  color: #09b451;
+}
+
 /****** instructor css******/
 
 .instructorHeading {
@@ -467,4 +692,127 @@
   text-align: center;
   color: #333333;
   margin-top: 36px;
+}
+
+/******contact us css*****/
+
+.contactUsContainer {
+  display: flex;
+  gap: 110px;
+  background-image:url("/src/assests/contactUs/image\ 10.png");
+}
+
+.contactUsHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contactUsHeading > h1 {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 42px;
+  color: #333333;
+  text-transform: capitalize;
+}
+
+.contactUsHeading > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.contactUsButtons {
+  margin-top: 90px;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 75px;
+}
+
+.button1 {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #09b451;
+  color: #ffffff;
+  width: 161px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+}
+
+.button2 {
+  width: 160px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e7faef;
+  color: #09b451;
+  border: 1px solid #09b451;
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/******footer css*****/
+
+.footerContainer {
+  background-color: #000000;
+  display: flex;
+  width: 1440px;
+  height: 587px;
+  top: 5847.93px;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
+.footerLeft > h2 {
+  font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 32.8px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.footerLeft > p {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: lowercase;
+  color: #ffffff;
+  margin-bottom: 33px;
+}
+
+.footerIcons {
+  display: flex;
+  gap: 24px;
+}
+
+.footerRight {
+  display: flex;
+  margin-top: 70px;
+  margin-right: 180px;
+}
+
+.footerElements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 55px;
+}
+
+.footerElements > a {
+  text-decoration: none;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  gap: 55px;
+  text-transform: capitalize;
+  color: #ffffff;
 }
